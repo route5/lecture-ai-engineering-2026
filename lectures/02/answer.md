@@ -3,7 +3,33 @@
 ## 演習
 
 - 使ったモデル・設定（`result.json` の `config` から）：
-- 自分で学習を実行したか（`executed_training_myself`）：はい / いいえ（実行できた範囲：　）
+
+      {
+    "base_model": "Qwen/Qwen3.5-0.8B",
+    "revision": "2fc06364715b967f1860aea9cf38778875588b17",
+    "seed": 42,
+    "num_train_epochs": 20,
+    "warmup_steps": 6,
+    "lr": 0.0002,
+    "lora_r": 16,
+    "lora_alpha": 32,
+    "max_seq_len": 512,
+    "max_new_tokens": 96,
+    "gen": {
+      "do_sample": false
+    }
+
+
+- 自分で学習を実行したか（`executed_training_myself`）： いいえ
+（実行できた範囲：
+以下の表示が出て、継続できませんでした。
+GPU バックエンドに接続できません
+Colab での使用量上限に達したため、現在 GPU に接続できません。 詳細
+GPU をさらに利用できるように、Pay As You Go で Colab のコンピューティング ユニットを購入することをご検討ください。
+　）
+
+
+
 - 学習前：`format_rate` =　 / `content_rate` =　
 - 学習後：`format_rate` =　 / `content_rate` =　
 - 退行した質問：
@@ -13,7 +39,10 @@
 
 ## 宿題
 
-- 取り組んだレベル：基礎 / 実装 / 発展
+- 取り組んだレベル：基礎 
 - 変えた設定やデータ：
 - 結果（比較表や数字）：
 - ファインチューニングが向く場面・向かない場面についての考察：
+
+
+
